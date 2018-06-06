@@ -289,7 +289,7 @@ nav h1 a {
 }
 
 #restaurant-img {
-  width: 100%;
+  width: 90%;
 
 }
 
@@ -383,6 +383,9 @@ nav h1 a {
   #reviews-container li {
     width: auto;
     margin: 5%;
+  }
+  #restaurant-img {
+    width: 100%;
   }
 
 }
