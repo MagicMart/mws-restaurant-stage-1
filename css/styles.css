@@ -220,7 +220,7 @@ nav h1 a {
 }
 
 #restaurants-list li h1 {
-  color: #f18200;
+  color: #945103;
   font-family: Arial, sans-serif;
   font-size: 14pt;
   font-weight: 200;
@@ -236,7 +236,7 @@ nav h1 a {
 }
 
 #restaurants-list li a {
-  background-color: orange;
+  background-color: #945103;
   border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
