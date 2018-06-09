@@ -201,6 +201,8 @@ nav h1 a {
 }
 
 #restaurants-list li {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial, sans-serif;
