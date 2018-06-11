@@ -8,7 +8,8 @@ self.addEventListener('install', (event) => {
                 '/js/dbhelper.js',
                 '/js/restaurant_info.js',
                 '/data/restaurants.json',
-                '/js/main.js']
+                '/js/main.js',
+                '/sw/sw.js']
             );
         })
     );
