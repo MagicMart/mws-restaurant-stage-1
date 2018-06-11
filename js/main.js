@@ -81,7 +81,7 @@ window.initMap = () => {
     scrollwheel: false
   });
   updateRestaurants();
-  map.addListener('tilesloaded', function(){
+  map.addListener('tilesloaded', function () {
     document.querySelector('iframe').setAttribute('title', 'Google Maps');
   });
 };
