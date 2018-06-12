@@ -279,6 +279,11 @@ nav h1 a {
   }
 }
 
+/*===== Review's Date =====*/
+.inside h3 span {
+  float: right;
+}
+
 #restaurant-name {
   color: #bf1722;
   font-family: Arial, sans-serif;
