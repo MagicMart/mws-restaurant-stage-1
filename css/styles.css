@@ -45,8 +45,14 @@ a {
 
 a:hover,
 a:focus {
-  color: #3397db;
-  text-decoration: none;
+  background: #e91e63;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 0;
+  box-shadow: 0 0 8px 3px rgba(255, 255, 255. 0.8);
 }
 
 a img {
