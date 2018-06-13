@@ -166,6 +166,8 @@ nav h1 a {
 }
 
 #map-container h2 {
+  background: white;
+  color: black;
   margin: 0;
 }
 
