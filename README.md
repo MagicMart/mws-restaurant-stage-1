@@ -11,6 +11,10 @@ I took a static design that lacks accessibility and converted it to be responsiv
 
 This project uses google maps. I had to obtain an API key from [here.](https://cloud.google.com/maps-platform/)
 
+### Service Worker
+
+This [article](https://developers.google.com/web/fundamentals/primers/service-workers/) helped me.
+
 ### Note about ES6
 
 Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code.
