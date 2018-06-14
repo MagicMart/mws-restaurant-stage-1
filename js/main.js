@@ -187,7 +187,7 @@ addMarkersToMap = (restaurants = self.restaurants) => {
 };
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js').then(function (registration) {
+  navigator.serviceWorker.register('https://magicmart.github.io/mws-restaurant-stage-1/sw.js').then(function (registration) {
     console.log('Service worker registration succeeded:', registration);
   }).catch(function (error) {
     console.log('Service worker registration failed:', error);
