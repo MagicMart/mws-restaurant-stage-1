@@ -13,7 +13,9 @@
   <a href="#neighborhoods-select" class="skip-link">Skip to main content</a>
   <header>
     <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
+      <h1>
+        <a href="/">Restaurant Reviews</a>
+      </h1>
     </nav>
   </header>
 
@@ -25,24 +27,27 @@
     <section>
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-labelledby="neighborhood" >
-          <option value="all" id = "neighborhood">All Neighborhoods</option>
+        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-labelledby="neighborhood">
+          <option value="all" id="neighborhood">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" aria-label="menu" aria-labelledby="cuisine-name">
+        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" aria-labelledby="cuisine-name">
           <option value="all" id="cuisine-name">All Cuisines</option>
         </select>
       </div>
-      <ul role='menu' id="restaurants-list"></ul>
+      <ul role="menu" id="restaurants-list"></ul>
     </section>
   </main>
 
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLeb_tuqszckHt6c2Isk9nzhdFrcVyZ0s&callback=initMap"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLeb_tuqszckHt6c2Isk9nzhdFrcVyZ0s&callback=initMap"></script>
 
 
   <footer id="footer">
-    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    Copyright (c) 2017
+    <a href="/">
+      <strong>Restaurant Reviews</strong>
+    </a> All Rights Reserved.
   </footer>
 
 </body>
