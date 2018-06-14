@@ -4,7 +4,7 @@ self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open('static-v1').then((cache) => {
             return cache.addAll(
-                ['https://magicmart.github.io/mws-restaurant-stage-1/',
+                ['https://magicmart.github.io/mws-restaurant-stage-1/index.html',
                 'https://magicmart.github.io/mws-restaurant-stage-1/css/styles.css',
                 'https://magicmart.github.io/mws-restaurant-stage-1/js/dbhelper.js',
                 'https://magicmart.github.io/mws-restaurant-stage-1/js/restaurant_info.js',
