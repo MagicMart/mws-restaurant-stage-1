@@ -9,7 +9,7 @@ class DBHelper {
    */
   static get DATABASE_URL() {
     // const port = 8000;
-    return `https://magicmart.github.io/mws-restaurant-stage-1/`;
+    return `https://magicmart.github.io/mws-restaurant-stage-1/data/restaurants.json`;
   }
 
   /**
