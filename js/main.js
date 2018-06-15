@@ -148,6 +148,8 @@ createRestaurantHTML = (restaurant) => {
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   li.append(image);
   li.setAttribute('role', 'menuitem');
+  li.setAttribute('tabindex', '0');
+  li.setAttribute('aria-labelledBy', restaurant.name);
   image.alt = restaurant.name;
 
   const name = document.createElement('h3');
