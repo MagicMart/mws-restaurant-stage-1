@@ -14,7 +14,7 @@
   <header>
     <nav>
       <h1>
-        <a href="https://magicmart.github.io/mws-restaurant-stage-1/">Restaurant Reviews</a>
+        <a tabindex=0 href="https://magicmart.github.io/mws-restaurant-stage-1/">Restaurant Reviews</a>
       </h1>
     </nav>
   </header>
@@ -22,15 +22,15 @@
   <main id="maincontent">
     <section id="map-container">
       <h2>Google Maps</h2>
-      <div id="map"></div>
+      <div tabindex="0" id="map"></div>
     </section>
     <section>
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-labelledby="neighborhood">
+        <select tabindex=0 id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-labelledby="neighborhood">
           <option value="all" id="neighborhood">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" aria-labelledby="cuisine-name">
+        <select tabindex=0 id="cuisines-select" name="cuisines" onchange="updateRestaurants()" aria-labelledby="cuisine-name">
           <option value="all" id="cuisine-name">All Cuisines</option>
         </select>
       </div>
