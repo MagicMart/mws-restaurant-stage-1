@@ -142,12 +142,8 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
  * Create restaurant HTML.
  */
 createRestaurantHTML = (restaurant) => {
-  // Wrap list item in link
-  const liLink = document.createElement('a');
-  liLink.setAttribute('href', DBHelper.urlForRestaurant(restaurant));
-  liLink.setAttribute('tabindex', '0');
+
   const li = document.createElement('li');
-  liLink.append(li);
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
@@ -173,7 +169,7 @@ createRestaurantHTML = (restaurant) => {
   more.href = DBHelper.urlForRestaurant(restaurant);
   more.setAttribute('aria-label', 'View Restaurant Details');
   more.setAttribute('role', 'button');
-  more.setAttribute('tabindex', '-1');
+  more.setAttribute('tabindex', '0');
   li.append(more);
 
   return li;
