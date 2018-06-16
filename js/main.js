@@ -149,6 +149,8 @@ createRestaurantHTML = (restaurant) => {
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   li.append(image);
   li.setAttribute('tabindex', '0');
+  li.setAttribute('role', 'link');
+  li.href = DBHelper.urlForRestaurant(restaurant);
   li.setAttribute('aria-labelledBy', restaurant.name);
   image.alt = restaurant.name;
 
@@ -169,7 +171,7 @@ createRestaurantHTML = (restaurant) => {
   more.href = DBHelper.urlForRestaurant(restaurant);
   more.setAttribute('aria-label', 'View Restaurant Details');
   more.setAttribute('role', 'button');
-  more.setAttribute('tabindex', '0');
+  more.setAttribute('tabindex', '-1');
   li.append(more);
 
   return li;
