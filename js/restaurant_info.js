@@ -100,8 +100,7 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
 fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById('reviews-container');
   const title = document.createElement('h3');
-  // id for aria-labelledBY
-  title.setAttribute('id', 'reviews-section');
+
   title.innerHTML = 'Reviews';
   container.appendChild(title);
 
