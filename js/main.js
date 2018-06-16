@@ -147,6 +147,7 @@ createRestaurantHTML = (restaurant) => {
   liLink.setAttribute('href', DBHelper.urlForRestaurant(restaurant));
   liLink.setAttribute('tabindex', '0');
   const li = document.createElement('li');
+  liLink.append(li);
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
