@@ -137,8 +137,9 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
   addMarkersToMap();
 };
 
+// See https://www.w3.org/TR/2016/WD-wai-aria-practices-1.1-20161214/examples/link/link.html
 function goToLink(event, url) {
-  var type = event.type;
+  const type = event.type;
 
   if (
     (type === 'click') ||

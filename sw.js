@@ -28,6 +28,7 @@ self.addEventListener('install', (event) => {
     );
 });
 
+// See https://developers.google.com/web/ilt/pwa/lab-caching-files-with-service-worker
 self.addEventListener('fetch', function (event) {
     console.log('Fetch event for ', event.request.url);
     event.respondWith(
