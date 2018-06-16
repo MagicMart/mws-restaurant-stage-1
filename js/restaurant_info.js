@@ -101,7 +101,7 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById('reviews-container');
   const title = document.createElement('h3');
   // id for aria-labelledBY
-  name.setAttribute('id', 'reviews-section')
+  title.setAttribute('id', 'reviews-section');
   title.innerHTML = 'Reviews';
   container.appendChild(title);
 
