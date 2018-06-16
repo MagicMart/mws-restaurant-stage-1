@@ -137,6 +137,19 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
   addMarkersToMap();
 };
 
+function goToLink(event, url) {
+  var type = event.type;
+
+  if (
+    (type === 'click') ||
+    (type === 'keydown' && event.keyCode === 13)
+  ) {
+    window.location.href = url;
+
+    event.preventDefault();
+    event.stopPropagation();
+  }
+}
 
 /**
  * Create restaurant HTML.
@@ -145,6 +158,10 @@ createRestaurantHTML = (restaurant) => {
 
   const li = document.createElement('li');
   li.setAttribute('tabindex', '0');
+  li.setAttribute('role', 'link');
+  li.setAttribute('onclick', `goToLink(event, "${DBHelper.urlForRestaurant(restaurant)}" )`);
+  li.setAttribute('onkeydown', `goToLink(event, "${DBHelper.urlForRestaurant(restaurant)}" )`);
+
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
@@ -170,7 +187,7 @@ createRestaurantHTML = (restaurant) => {
   more.href = DBHelper.urlForRestaurant(restaurant);
   more.setAttribute('aria-label', 'View Restaurant Details');
   more.setAttribute('role', 'button');
-  more.setAttribute('tabindex', '0');
+  more.setAttribute('tabindex', '-1');
   li.append(more);
 
   return li;
