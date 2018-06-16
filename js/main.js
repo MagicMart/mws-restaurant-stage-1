@@ -142,15 +142,16 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
  * Create restaurant HTML.
  */
 createRestaurantHTML = (restaurant) => {
-
+  // Wrap list item in link
+  const liLink = document.createElement('a');
+  liLink.setAttribute('href', DBHelper.urlForRestaurant(restaurant));
+  liLink.setAttribute('tabindex', '0');
   const li = document.createElement('li');
-
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   li.append(image);
-  li.setAttribute('tabindex', '0');
-  li.setAttribute('aria-owns','this-button');
+
   li.setAttribute('aria-labelledBy', restaurant.name);
   image.alt = restaurant.name;
 
@@ -169,7 +170,6 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
-  more.setAttribute('id', 'this-button');
   more.setAttribute('aria-label', 'View Restaurant Details');
   more.setAttribute('role', 'button');
   more.setAttribute('tabindex', '-1');
